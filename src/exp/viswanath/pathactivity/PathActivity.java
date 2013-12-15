@@ -1,0 +1,19 @@
+package exp.viswanath.pathactivity;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class PathActivity extends Activity {
+
+	private CustomView customView;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_path);
+		
+		customView = (CustomView)findViewById(R.id.custom_view);
+	}
+
+
+}
